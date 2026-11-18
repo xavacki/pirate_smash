@@ -1,0 +1,12 @@
+.gradle/
+.idea/
+*.iml
+/build/
+/app/build/
+/local.properties
+/.tools/
+/target/
+/.smash-progress
+/smash-materials.txt
+
+/web-editor/vendor/

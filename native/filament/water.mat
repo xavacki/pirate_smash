@@ -1,0 +1,24 @@
+material {
+    name : "Pirate harbor water",
+    shadingModel : unlit,
+    culling : none,
+    parameters : [
+        { type : sampler2d, name : harbor },
+        { type : sampler2d, name : mask },
+        { type : float3, name : eye },
+        { type : float3, name : forward },
+        { type : float3, name : up },
+        { type : float2, name : halfFov }
+    ]
+}
+fragment {
+    #include "../../src/shaders/water.glsl"
+
+    void material(inout MaterialInputs material) {
+        prepareMaterial(material);
+        vec3 color = harborWater(getUserWorldPosition(), materialParams.eye, materialParams.forward,
+            materialParams.up, materialParams.halfFov, getUserTime().x,
+            materialParams_harbor, materialParams_mask);
+        material.baseColor = vec4(color, 1.0);
+    }
+}

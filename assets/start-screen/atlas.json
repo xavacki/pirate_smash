@@ -1,0 +1,858 @@
+{
+  "width": 4096,
+  "height": 2278,
+  "regions": {
+    "FlowSplash": [
+      12,
+      2,
+      1024,
+      1024
+    ],
+    "GameSplash": [
+      1040,
+      2,
+      1024,
+      1024
+    ],
+    "HomeBG": [
+      2068,
+      2,
+      1024,
+      1024
+    ],
+    "SmashFestLogoBackground": [
+      3096,
+      2,
+      665,
+      488
+    ],
+    "SmashLandLogoBackground": [
+      2,
+      1030,
+      665,
+      356
+    ],
+    "NoAdsIconFull": [
+      671,
+      1030,
+      270,
+      297
+    ],
+    "BottomPanelBigBg": [
+      945,
+      1030,
+      5,
+      255
+    ],
+    "BottomPanelBigSide": [
+      954,
+      1030,
+      86,
+      255
+    ],
+    "SettingsIcon": [
+      1044,
+      1030,
+      257,
+      232
+    ],
+    "BottomPanelSeperator": [
+      1305,
+      1030,
+      9,
+      230
+    ],
+    "ShopIcon": [
+      1318,
+      1030,
+      236,
+      229
+    ],
+    "AllButtonsBack": [
+      1558,
+      1030,
+      189,
+      226
+    ],
+    "HomeIcon": [
+      1751,
+      1030,
+      216,
+      224
+    ],
+    "LogoLetterFirstS": [
+      1971,
+      1030,
+      138,
+      183
+    ],
+    "GreenButton": [
+      2113,
+      1030,
+      149,
+      182
+    ],
+    "HardLevelButton": [
+      2266,
+      1030,
+      149,
+      181
+    ],
+    "SuperHardLevelButton": [
+      2419,
+      1030,
+      149,
+      181
+    ],
+    "LogoLetterH": [
+      2572,
+      1030,
+      146,
+      180
+    ],
+    "BottomPanelBg": [
+      2722,
+      1030,
+      7,
+      178
+    ],
+    "SmashFestText": [
+      2733,
+      1030,
+      398,
+      177
+    ],
+    "LogoLetterM": [
+      3135,
+      1030,
+      154,
+      155
+    ],
+    "LandText": [
+      3293,
+      1030,
+      396,
+      140
+    ],
+    "LifeIcon": [
+      3693,
+      1030,
+      152,
+      140
+    ],
+    "UnlimitedLifeIcon": [
+      3849,
+      1030,
+      152,
+      140
+    ],
+    "LogoLetterSecondS": [
+      2,
+      1390,
+      100,
+      138
+    ],
+    "LogoLetterA": [
+      106,
+      1390,
+      117,
+      133
+    ],
+    "CoinIcon": [
+      227,
+      1390,
+      121,
+      121
+    ],
+    "HomepageLifeCoinButton": [
+      352,
+      1390,
+      120,
+      109
+    ],
+    "PlusIcon": [
+      476,
+      1390,
+      70,
+      70
+    ],
+    "BottomPanelBigConnector": [
+      550,
+      1390,
+      31,
+      44
+    ],
+    "ButtonShine": [
+      585,
+      1390,
+      55,
+      32
+    ],
+    "BottomPanelBorder": [
+      644,
+      1390,
+      10,
+      30
+    ],
+    "AllButtonsBack_13": [
+      1558,
+      1030,
+      189,
+      226
+    ],
+    "BottomPanelBg_29": [
+      2722,
+      1030,
+      7,
+      178
+    ],
+    "BottomPanelBigBg_112": [
+      945,
+      1030,
+      5,
+      255
+    ],
+    "BottomPanelBigConnector_65": [
+      550,
+      1390,
+      31,
+      44
+    ],
+    "BottomPanelBigSide_129": [
+      954,
+      1030,
+      86,
+      255
+    ],
+    "BottomPanelBorder_145": [
+      644,
+      1390,
+      10,
+      30
+    ],
+    "BottomPanelSeperator_34": [
+      1305,
+      1030,
+      9,
+      230
+    ],
+    "ButtonShine_30": [
+      585,
+      1390,
+      55,
+      32
+    ],
+    "CoinIcon_57": [
+      227,
+      1390,
+      121,
+      121
+    ],
+    "FlowSplash_17": [
+      12,
+      2,
+      1024,
+      1024
+    ],
+    "GameSplash_14": [
+      1040,
+      2,
+      1024,
+      1024
+    ],
+    "GreenButton_28": [
+      2113,
+      1030,
+      149,
+      182
+    ],
+    "HardLevelButton_87": [
+      2266,
+      1030,
+      149,
+      181
+    ],
+    "HomeBG_138": [
+      2068,
+      2,
+      1024,
+      1024
+    ],
+    "HomeIcon_92": [
+      1751,
+      1030,
+      216,
+      224
+    ],
+    "HomepageLifeCoinButton_119": [
+      352,
+      1390,
+      120,
+      109
+    ],
+    "LandText_29": [
+      3293,
+      1030,
+      396,
+      140
+    ],
+    "LifeIcon_133": [
+      3693,
+      1030,
+      152,
+      140
+    ],
+    "LogoLetterA_19": [
+      106,
+      1390,
+      117,
+      133
+    ],
+    "LogoLetterFirstS_23": [
+      1971,
+      1030,
+      138,
+      183
+    ],
+    "LogoLetterH_22": [
+      2572,
+      1030,
+      146,
+      180
+    ],
+    "LogoLetterM_20": [
+      3135,
+      1030,
+      154,
+      155
+    ],
+    "LogoLetterSecondS_16": [
+      2,
+      1390,
+      100,
+      138
+    ],
+    "NoAdsIconFull_71": [
+      671,
+      1030,
+      270,
+      297
+    ],
+    "PlusIcon_44": [
+      476,
+      1390,
+      70,
+      70
+    ],
+    "SettingsIcon_117": [
+      1044,
+      1030,
+      257,
+      232
+    ],
+    "ShopIcon_124": [
+      1318,
+      1030,
+      236,
+      229
+    ],
+    "SmashFestLogoBackground_26": [
+      3096,
+      2,
+      665,
+      488
+    ],
+    "SmashFestText_11": [
+      2733,
+      1030,
+      398,
+      177
+    ],
+    "SmashLandLogoBackground_31": [
+      2,
+      1030,
+      665,
+      356
+    ],
+    "SuperHardLevelButton_40": [
+      2419,
+      1030,
+      149,
+      181
+    ],
+    "UnlimitedLifeIcon_118": [
+      3849,
+      1030,
+      152,
+      140
+    ],
+    "NunitoFontAtlas": [
+      2,
+      1532,
+      1024,
+      744
+    ]
+  },
+  "sprite_sources": {
+    "SmashFestLogoBackground": {
+      "file": "sharedassets0.assets",
+      "path_id": 63
+    },
+    "LogoLetterFirstS": {
+      "file": "sharedassets0.assets",
+      "path_id": 60
+    },
+    "LogoLetterH": {
+      "file": "sharedassets0.assets",
+      "path_id": 59
+    },
+    "FlowSplash": {
+      "file": "sharedassets0.assets",
+      "path_id": 54
+    },
+    "LandText": {
+      "file": "sharedassets0.assets",
+      "path_id": 66
+    },
+    "GameSplash": {
+      "file": "sharedassets0.assets",
+      "path_id": 51
+    },
+    "LogoLetterA": {
+      "file": "sharedassets0.assets",
+      "path_id": 56
+    },
+    "SmashLandLogoBackground": {
+      "file": "sharedassets0.assets",
+      "path_id": 68
+    },
+    "SmashFestText": {
+      "file": "sharedassets0.assets",
+      "path_id": 48
+    },
+    "LogoLetterM": {
+      "file": "sharedassets0.assets",
+      "path_id": 57
+    },
+    "LogoLetterSecondS": {
+      "file": "sharedassets0.assets",
+      "path_id": 53
+    },
+    "BlueMainWhitePanel": {
+      "file": "sharedassets0.assets",
+      "path_id": 49
+    },
+    "BlueGradient": {
+      "file": "sharedassets0.assets",
+      "path_id": 52
+    },
+    "AllButtonsBack": {
+      "file": "sharedassets0.assets",
+      "path_id": 50
+    },
+    "PopupFrameMask": {
+      "file": "sharedassets0.assets",
+      "path_id": 47
+    },
+    "EgoMiddleBG": {
+      "file": "sharedassets0.assets",
+      "path_id": 46
+    },
+    "PopupFrame": {
+      "file": "sharedassets0.assets",
+      "path_id": 61
+    },
+    "HeaderFrame": {
+      "file": "sharedassets0.assets",
+      "path_id": 64
+    },
+    "BlueHeader": {
+      "file": "sharedassets0.assets",
+      "path_id": 55
+    },
+    "PopupCloseFront": {
+      "file": "sharedassets0.assets",
+      "path_id": 62
+    },
+    "PopupCloseBack": {
+      "file": "sharedassets0.assets",
+      "path_id": 58
+    },
+    "ButtonShine": {
+      "file": "sharedassets0.assets",
+      "path_id": 67
+    },
+    "GreenButton": {
+      "file": "sharedassets0.assets",
+      "path_id": 65
+    },
+    "BottomPanelSeperator": {
+      "file": "sharedassets1.assets",
+      "path_id": 174
+    },
+    "BottomPanelBorder": {
+      "file": "sharedassets1.assets",
+      "path_id": 284
+    },
+    "SettingsPanelBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 235
+    },
+    "PrelevelRocketIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 269
+    },
+    "ShopBundleFrame": {
+      "file": "sharedassets1.assets",
+      "path_id": 218
+    },
+    "PopupCoin": {
+      "file": "sharedassets1.assets",
+      "path_id": 189
+    },
+    "RedHeader": {
+      "file": "sharedassets1.assets",
+      "path_id": 190
+    },
+    "ShopCoinsIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 242
+    },
+    "ShopButtonBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 214
+    },
+    "SettingsTermsBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 185
+    },
+    "ShopBundleBottomBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 255
+    },
+    "SettingsButtonSelectedFront": {
+      "file": "sharedassets1.assets",
+      "path_id": 203
+    },
+    "ShopSectionHeaderYellow": {
+      "file": "sharedassets1.assets",
+      "path_id": 163
+    },
+    "ClockBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 186
+    },
+    "WhitePanel": {
+      "file": "sharedassets1.assets",
+      "path_id": 246
+    },
+    "SettingsButtonBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 261
+    },
+    "GiftBoxBarFrame": {
+      "file": "sharedassets1.assets",
+      "path_id": 270
+    },
+    "ShopBundleTopBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 208
+    },
+    "JapaneseSun": {
+      "file": "sharedassets1.assets",
+      "path_id": 237
+    },
+    "InfoIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 240
+    },
+    "ShopButton": {
+      "file": "sharedassets1.assets",
+      "path_id": 289
+    },
+    "ShopBundleInsideFrame": {
+      "file": "sharedassets1.assets",
+      "path_id": 239
+    },
+    "GiftBoxBarFront": {
+      "file": "sharedassets1.assets",
+      "path_id": 187
+    },
+    "SettingsButtonUnselectedFront": {
+      "file": "sharedassets1.assets",
+      "path_id": 285
+    },
+    "PlusIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 183
+    },
+    "GiftBoxBarSeperator": {
+      "file": "sharedassets1.assets",
+      "path_id": 292
+    },
+    "PrelevelRocketIconLocked": {
+      "file": "sharedassets1.assets",
+      "path_id": 180
+    },
+    "SkullIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 171
+    },
+    "PrelevelBoosterUnselectedBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 265
+    },
+    "HomepageLifeCoinButton": {
+      "file": "sharedassets1.assets",
+      "path_id": 258
+    },
+    "Lock": {
+      "file": "sharedassets1.assets",
+      "path_id": 282
+    },
+    "SettingsSoundOnIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 238
+    },
+    "BoardItemBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 197
+    },
+    "GiftBoxBarLockedPanelFront": {
+      "file": "sharedassets1.assets",
+      "path_id": 250
+    },
+    "GiftBoxBarLockedPanelBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 172
+    },
+    "GiftBoxBarLockedFrame": {
+      "file": "sharedassets1.assets",
+      "path_id": 249
+    },
+    "PrelevelBoosterSelectedBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 224
+    },
+    "BottomPanelBg": {
+      "file": "sharedassets1.assets",
+      "path_id": 169
+    },
+    "PrelevelBoosterFreePanelBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 244
+    },
+    "PrelevelBoosterPlusSign": {
+      "file": "sharedassets1.assets",
+      "path_id": 191
+    },
+    "PrelevelBoosterSelectedSign": {
+      "file": "sharedassets1.assets",
+      "path_id": 205
+    },
+    "RedGradient": {
+      "file": "sharedassets1.assets",
+      "path_id": 211
+    },
+    "PanelDiamond": {
+      "file": "sharedassets1.assets",
+      "path_id": 175
+    },
+    "ShopSectionHeaderBlue": {
+      "file": "sharedassets1.assets",
+      "path_id": 167
+    },
+    "LifeIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 272
+    },
+    "WarningIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 202
+    },
+    "PrelevelBoosterBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 200
+    },
+    "StreakGift3": {
+      "file": "sharedassets1.assets",
+      "path_id": 247
+    },
+    "PageBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 267
+    },
+    "ShopBundleGoldTopBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 170
+    },
+    "PinkButton": {
+      "file": "sharedassets1.assets",
+      "path_id": 188
+    },
+    "PrelevelBoosterCountSign": {
+      "file": "sharedassets1.assets",
+      "path_id": 219
+    },
+    "UIMask": {
+      "file": "0000000000000000f000000000000000",
+      "path_id": 7
+    },
+    "BottomPanelBigBg": {
+      "file": "sharedassets1.assets",
+      "path_id": 251
+    },
+    "PurpleHeader": {
+      "file": "sharedassets1.assets",
+      "path_id": 194
+    },
+    "GiftBoxBarBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 184
+    },
+    "ShopBundleGoldBottomBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 290
+    },
+    "ShopBundlePurchaseButtonBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 222
+    },
+    "NoAdsIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 215
+    },
+    "ShopIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 263
+    },
+    "TutorialTextBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 165
+    },
+    "Cross": {
+      "file": "sharedassets1.assets",
+      "path_id": 234
+    },
+    "BottomPanelBigConnector": {
+      "file": "sharedassets1.assets",
+      "path_id": 204
+    },
+    "ShopBundleGoldInsideFrame": {
+      "file": "sharedassets1.assets",
+      "path_id": 271
+    },
+    "SettingsHapticOnIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 176
+    },
+    "Clock": {
+      "file": "sharedassets1.assets",
+      "path_id": 228
+    },
+    "MenuTopPanelBG": {
+      "file": "sharedassets1.assets",
+      "path_id": 248
+    },
+    "SettingsMusicOffIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 279
+    },
+    "StreakGiftInfoTooltip": {
+      "file": "sharedassets1.assets",
+      "path_id": 273
+    },
+    "ShopSectionHeaderPurple": {
+      "file": "sharedassets1.assets",
+      "path_id": 236
+    },
+    "CoinIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 196
+    },
+    "ShopBundleGoldPurchaseButtonBack": {
+      "file": "sharedassets1.assets",
+      "path_id": 173
+    },
+    "BottomPanelBigSide": {
+      "file": "sharedassets1.assets",
+      "path_id": 268
+    },
+    "PurpleMainWhitePanel": {
+      "file": "sharedassets1.assets",
+      "path_id": 232
+    },
+    "ClockPiece": {
+      "file": "sharedassets1.assets",
+      "path_id": 288
+    },
+    "StreakGift0Locked": {
+      "file": "sharedassets1.assets",
+      "path_id": 195
+    },
+    "PurpleGradient": {
+      "file": "sharedassets1.assets",
+      "path_id": 278
+    },
+    "SettingsIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 256
+    },
+    "HomeIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 231
+    },
+    "RedMainWhitePanel": {
+      "file": "sharedassets1.assets",
+      "path_id": 206
+    },
+    "NoAdsIconFull": {
+      "file": "sharedassets1.assets",
+      "path_id": 210
+    },
+    "AdIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 193
+    },
+    "UnlimitedLifeIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 257
+    },
+    "SettingsSoundOffIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 241
+    },
+    "Tick": {
+      "file": "sharedassets1.assets",
+      "path_id": 192
+    },
+    "ClockDot": {
+      "file": "sharedassets1.assets",
+      "path_id": 245
+    },
+    "Rocket3": {
+      "file": "sharedassets1.assets",
+      "path_id": 177
+    },
+    "HardLevelButton": {
+      "file": "sharedassets1.assets",
+      "path_id": 226
+    },
+    "TutorialArrow": {
+      "file": "sharedassets1.assets",
+      "path_id": 212
+    },
+    "SuperHardLevelButton": {
+      "file": "sharedassets1.assets",
+      "path_id": 179
+    },
+    "SettingsHapticOffIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 262
+    },
+    "SettingsMusicOnIcon": {
+      "file": "sharedassets1.assets",
+      "path_id": 275
+    }
+  }
+}

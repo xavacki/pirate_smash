@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pirate Smash · Level Editor</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/filament.js" defer></script>
+  <script type="module" src="editor.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="identity"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><div><strong>Pirate Smash</strong><span>Level editor</span></div></div>
+    <nav class="tabs" aria-label="Editing mode">
+      <button id="level-tab" class="active" type="button" aria-pressed="true">Level</button>
+      <button id="mesh-tab" type="button" aria-pressed="false">Mesh</button>
+    </nav>
+    <div class="actions">
+      <button id="open" type="button">Open JSON</button>
+      <button id="save" class="primary" type="button">Export JSON</button>
+      <input id="file" type="file" accept=".json,application/json" hidden>
+    </div>
+  </header>
+  <main class="editor">
+    <aside class="outline">
+      <div id="level-outline">
+        <div class="panel-section">
+          <h2>Level</h2>
+          <div class="stage-nav">
+            <button id="previous" aria-label="Previous stage" title="Previous stage">‹</button>
+            <select id="stage" aria-label="Level and stage"></select>
+            <button id="next" aria-label="Next stage" title="Next stage">›</button>
+          </div>
+          <label class="field single">Shot limit<input id="shots" type="number" min="1" max="2147483647" step="1"></label>
+          <label class="field single">World Y offset<input id="world-offset" type="number" step="0.1"></label>
+        </div>
+        <div class="panel-section list-section">
+          <div class="section-title"><h2>Objects</h2><span id="item-count"></span></div>
+          <div class="inline-buttons"><button id="add-object">+ Target</button><button id="add-platform">+ Platform</button></div>
+          <div id="object-list" class="list" aria-label="Stage objects"></div>
+        </div>
+      </div>
+      <div id="mesh-outline" hidden>
+        <div class="panel-section">
+          <h2>Shape library</h2>
+          <input id="shape-filter" type="search" placeholder="Search shapes…" aria-label="Search shapes">
+          <div id="shape-list" class="list mesh-list" aria-label="Available shapes"></div>
+        </div>
+      </div>
+    </aside>
+    <section class="viewport" aria-label="3D viewport">
+      <canvas id="preview" aria-label="Filament 3D preview" tabindex="0"></canvas>
+      <span id="vertex-marker" class="vertex-marker" hidden aria-hidden="true"></span>
+      <div class="view-top"><div><h1 id="view-title">Level preview</h1><p id="view-detail"></p></div><button id="fit" title="Frame the scene">Fit view</button></div>
+      <div id="canvas-message" class="canvas-message" hidden></div>
+      <div class="view-bottom"><span id="view-hint">Drag to orbit · Scroll to zoom · Click to select</span><span class="engine">Filament 1.70.0</span></div>
+    </section>
+    <aside class="inspector" aria-label="Inspector">
+      <div class="panel-section inspector-heading">
+        <h2 id="inspector-title">Inspector</h2>
+        <p id="inspector-subtitle"></p>
+      </div>
+      <div id="inspector-content"></div>
+    </aside>
+  </main>
+  <footer class="status-bar" role="status"><span id="status">Loading game assets…</span><span id="dirty"></span></footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+plugins {
+    id 'com.android.application'
+}
+
+def gameRoot = rootProject.layout.projectDirectory
+def abis = providers.gradleProperty('smashAbis').orElse('arm64-v8a,x86_64').get()
+    .split(',').collect { it.trim() }.unique()
+if (abis.isEmpty() || !abis.every { it in ['arm64-v8a', 'x86_64'] }) {
+    throw new GradleException('smashAbis must list arm64-v8a, x86_64, or both.')
+}
+
+def nativeLibs = layout.buildDirectory.dir("generated/smash/jniLibs/${abis.join('_')}")
+def sdlJava = layout.buildDirectory.dir('generated/smash/sdlJava')
+def gameAssets = layout.buildDirectory.dir('generated/smash/assets')
+def existingDebugKey = file("${System.getProperty('user.home')}/.android/debug.keystore")
+if (!existingDebugKey.isFile()) {
+    existingDebugKey = gameRoot.file('.tools/android/debug.keystore').asFile
+}
+
+def userNdk = file("${System.getProperty('user.home')}/soft/android-ndk-r27d")
+
+android {
+    namespace 'org.smashland.rust'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    ndkVersion '27.3.13750724'
+    if (userNdk.isDirectory()) {
+        ndkPath userNdk.absolutePath
+    } else {
+        ndkPath gameRoot.dir('.tools/android/android-ndk-r27d').asFile.absolutePath
+    }
+
+    defaultConfig {
+        applicationId providers.gradleProperty('smashApplicationId').orElse('org.smashland.rust').get()
+        minSdk 26
+        targetSdk 35
+        versionCode 4
+        versionName '0.4.0'
+        ndk {
+            abiFilters.addAll(abis)
+        }
+    }
+
+    if (existingDebugKey.isFile()) {
+        signingConfigs.debug {
+            storeFile existingDebugKey
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
+    sourceSets.main {
+        java.srcDir(sdlJava)
+        assets.srcDir(gameAssets)
+        jniLibs.srcDir(nativeLibs)
+    }
+}
+
+def nativeBuild = tasks.register('buildSmashNative', Exec) {
+    group = 'build'
+    description = 'Build the Rust game, Bullet, SDL3, and Filament for each Android ABI.'
+    workingDir gameRoot.asFile
+    commandLine(['bash', 'tools/build-native-android.sh', nativeLibs.get().asFile.absolutePath] + abis)
+    inputs.property('abis', abis)
+    inputs.files(gameRoot.file('Cargo.toml'), gameRoot.file('Cargo.lock'), gameRoot.file('build.rs'),
+        gameRoot.file('tools/build-native-android.sh'), gameRoot.file('tools/android-rust.sh'),
+        gameRoot.file('tools/sdl-source.sh'))
+    inputs.dir(gameRoot.dir('src'))
+    inputs.dir(gameRoot.dir('native'))
+    inputs.files(rootProject.fileTree(gameRoot.dir('assets')) {
+        include '**/*.rs', 'physics/colliders.txt'
+    })
+    outputs.dir(nativeLibs)
+}
+
+def sdlSources = tasks.register('prepareSdlJava', Exec) {
+    group = 'build'
+    description = 'Stage the Java activity bindings from the Cargo-pinned SDL3 source.'
+    workingDir gameRoot.asFile
+    commandLine 'bash', 'tools/sdl-source.sh', sdlJava.get().asFile.absolutePath
+    inputs.file(gameRoot.file('tools/sdl-source.sh'))
+    inputs.file(gameRoot.file('Cargo.lock'))
+    outputs.dir(sdlJava)
+}
+
+def assetArchive = tasks.register('packGameAssets', Exec) {
+    group = 'build'
+    description = 'Package the game assets and write the checksum used by MainActivity.'
+    workingDir gameRoot.asFile
+    commandLine 'python3', 'tools/pack-game-assets.py', gameAssets.get().asFile.absolutePath
+    inputs.file(gameRoot.file('tools/pack-game-assets.py'))
+    inputs.dir(gameRoot.dir('assets'))
+    outputs.dir(gameAssets)
+}
+
+tasks.matching { it.name == 'preBuild' }.configureEach {
+    dependsOn(nativeBuild, sdlSources, assetArchive)
+}

@@ -1,0 +1,189 @@
+{
+  "types": {
+    "1": "barrel",
+    "2": "sack",
+    "3": "chest",
+    "11": "bottle",
+    "12": "purple-bottle",
+    "13": "sack",
+    "14": "chest",
+    "15": "bottle",
+    "16": "jade-bottle",
+    "21": "chest",
+    "22": "barrel",
+    "31": "crate",
+    "41": "crate",
+    "42": "barrel",
+    "51": "powder",
+    "61": "chest",
+    "62": "bottle"
+  },
+  "models": {
+    "barrel": [
+      [
+        "assets/pirate/barrel-redwood.obj",
+        "assets/pirate/redwood.png"
+      ],
+      [
+        "assets/pirate/barrel-iron.obj",
+        "assets/pirate/iron.png"
+      ],
+      [
+        "assets/pirate/barrel-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/barrel-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/barrel-ivory.obj",
+        "assets/pirate/ivory.png"
+      ]
+    ],
+    "powder": [
+      [
+        "assets/pirate/powder-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/powder-iron.obj",
+        "assets/pirate/iron.png"
+      ],
+      [
+        "assets/pirate/powder-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/powder-ivory.obj",
+        "assets/pirate/ivory.png"
+      ],
+      [
+        "assets/pirate/powder-cloth.obj",
+        "assets/pirate/cloth.png"
+      ]
+    ],
+    "crate": [
+      [
+        "assets/pirate/crate-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/crate-brass.obj",
+        "assets/pirate/brass.png"
+      ]
+    ],
+    "chest": [
+      [
+        "assets/pirate/chest-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/chest-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/chest-iron.obj",
+        "assets/pirate/iron.png"
+      ],
+      [
+        "assets/pirate/chest-ivory.obj",
+        "assets/pirate/ivory.png"
+      ]
+    ],
+    "bottle": [
+      [
+        "assets/pirate/bottle-blue.obj",
+        "assets/pirate/blue.png"
+      ],
+      [
+        "assets/pirate/bottle-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/bottle-wood.obj",
+        "assets/pirate/wood.png"
+      ]
+    ],
+    "jade-bottle": [
+      [
+        "assets/pirate/jade-bottle-jade.obj",
+        "assets/pirate/jade.png"
+      ],
+      [
+        "assets/pirate/jade-bottle-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/jade-bottle-wood.obj",
+        "assets/pirate/wood.png"
+      ]
+    ],
+    "purple-bottle": [
+      [
+        "assets/pirate/purple-bottle-purple.obj",
+        "assets/pirate/purple.png"
+      ],
+      [
+        "assets/pirate/purple-bottle-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/purple-bottle-wood.obj",
+        "assets/pirate/wood.png"
+      ]
+    ],
+    "sack": [
+      [
+        "assets/pirate/sack-cloth.obj",
+        "assets/pirate/cloth.png"
+      ],
+      [
+        "assets/pirate/sack-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/sack-brass.obj",
+        "assets/pirate/brass.png"
+      ]
+    ],
+    "dock": [
+      [
+        "assets/pirate/dock-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/dock-iron.obj",
+        "assets/pirate/iron.png"
+      ],
+      [
+        "assets/pirate/dock-brass.obj",
+        "assets/pirate/brass.png"
+      ]
+    ],
+    "cannon-barrel": [
+      [
+        "assets/pirate/cannon-barrel-iron.obj",
+        "assets/pirate/iron.png"
+      ],
+      [
+        "assets/pirate/cannon-barrel-brass.obj",
+        "assets/pirate/brass.png"
+      ]
+    ],
+    "cannon-carriage": [
+      [
+        "assets/pirate/cannon-carriage-wood.obj",
+        "assets/pirate/wood.png"
+      ],
+      [
+        "assets/pirate/cannon-carriage-brass.obj",
+        "assets/pirate/brass.png"
+      ],
+      [
+        "assets/pirate/cannon-carriage-iron.obj",
+        "assets/pirate/iron.png"
+      ]
+    ]
+  }
+}

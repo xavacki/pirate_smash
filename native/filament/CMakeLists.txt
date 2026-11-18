@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.22)
+project(SmashFilament LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(FILAMENT_SDK "" CACHE PATH "Root of the Filament 1.70.0 native Android SDK")
+add_library(smash_filament SHARED bridge.cpp)
+target_include_directories(smash_filament PRIVATE "${FILAMENT_SDK}/include")
+set(archives)
+foreach(name filament backend filabridge filaflat utils geometry ktxreader image basis_transcoder
+             shaders smol-v bluevk perfetto abseil zstd mikktspace)
+    if(EXISTS "${FILAMENT_SDK}/lib/lib${name}.a")
+        list(APPEND archives "${FILAMENT_SDK}/lib/lib${name}.a")
+    elseif(EXISTS "${FILAMENT_SDK}/lib/${ANDROID_ABI}/lib${name}.a")
+        list(APPEND archives "${FILAMENT_SDK}/lib/${ANDROID_ABI}/lib${name}.a")
+    endif()
+endforeach()
+target_link_libraries(smash_filament PRIVATE "-Wl,--start-group" ${archives} "-Wl,--end-group"
+    android log EGL GLESv3 dl z)
+target_link_options(smash_filament PRIVATE "-Wl,-z,max-page-size=16384" "-Wl,--no-undefined" "-Wl,--exclude-libs,ALL")

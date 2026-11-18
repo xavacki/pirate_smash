@@ -1,0 +1,29 @@
+[package]
+name = "smash-land-port"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+autobins = false
+
+[[bin]]
+name = "smash-land"
+path = "src/desktop.rs"
+
+[lib]
+path = "src/main.rs"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+anyhow = "1"
+bytemuck = { version = "1", features = ["derive"] }
+glam = "0.30"
+glow = "0.16"
+png = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+
+[target.'cfg(not(target_os = "android"))'.dependencies]
+sdl3-sys = { version = "=0.6.8", default-features = false, features = ["build-from-source-static"] }
+
+[target.'cfg(target_os = "android")'.dependencies]
+sdl3-sys = { version = "=0.6.8", default-features = false, features = ["no-link"] }
